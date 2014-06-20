@@ -1,0 +1,27 @@
+{
+  "name": "hapi-lxjs",
+  "version": "0.0.0",
+  "description": "Hapi plugins for the LXJS Hapi workshop",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nvcexploder/hapi-lxjs.git"
+  },
+  "keywords": [
+    "hapi",
+    "lxjs",
+    "plugin"
+  ],
+  "author": "nvcexploder (benacker@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nvcexploder/hapi-lxjs/issues"
+  },
+  "homepage": "https://github.com/nvcexploder/hapi-lxjs"
+}
