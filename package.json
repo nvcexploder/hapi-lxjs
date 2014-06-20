@@ -1,13 +1,13 @@
 {
   "name": "hapi-lxjs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Hapi plugins for the LXJS Hapi workshop",
   "main": "index.js",
   "directories": {
     "example": "example"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "make test"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,9 @@
   },
   "homepage": "https://github.com/nvcexploder/hapi-lxjs",
   "dependencies": {
-    "hapi": "^6.0.2"
+    "hapi": "6.x.x"
+  },
+  "devDependencies": {
+    "lab": "3.x.x"
   }
 }
