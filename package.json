@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/nvcexploder/hapi-lxjs/issues"
   },
-  "homepage": "https://github.com/nvcexploder/hapi-lxjs"
+  "homepage": "https://github.com/nvcexploder/hapi-lxjs",
+  "dependencies": {
+    "hapi": "^6.0.2"
+  }
 }
