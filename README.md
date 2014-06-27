@@ -3,4 +3,6 @@ hapi-lxjs
 
 LXJS Repository for API building
 
-yo yo yo!
+_Hallo!_
+
+Welcome to the Hapi Training for LXJS. 

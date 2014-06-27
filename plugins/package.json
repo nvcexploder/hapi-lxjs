@@ -1,0 +1,49 @@
+{
+  "name": "backer",
+  "description": "The best plugin ever",
+  "version": "0.0.0",
+  "homepage": "https://github.com/nvcexploder/backer",
+  "bugs": "https://github.com/nvcexploder/backer/issues",
+  "license": "MIT",
+  "main": "index",
+  "author": {
+    "name": "Ben Acker",
+    "email": "benacker@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nvcexploder/backer"
+  },
+  "keywords":[
+    "hapi",
+    "plugin"
+  ],
+  "dependencies": {
+    "joi": "4.6.1",
+    "lout": "5.0.0",
+    "hoek": "2.3.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "gulp-util": "2.2.16",
+    "gulp-bump": "^0.1.8",
+    "gulp-jscs": "^0.4.2",
+    "gulp-jshint": "^1.5.5",
+    "gulp-nodemon": "^1.0.4",
+    "jshint-stylish": "^0.2.0",
+    "gulp-load-plugins": "^0.5.1",
+    "gulp-plumber": "^0.6.2",
+    "gulp-lab": "0.0.7",
+    "hapi": "6.x.x",
+    "lab": "3.x.x"
+  },
+  "peerDependencies": {
+    "hapi": ">=2.x.x"
+  },
+  "engines": {
+    "node": ">=0.10.22"
+  },
+  "scripts": {
+    "test": "gulp test"
+  }
+}
