@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/nvcexploder/hapi-lxjs",
   "dependencies": {
-    "hapi": "^6.0.2"
+    "hapi": "^6.0.2",
+    "mustache": "^0.8.2"
   }
 }
