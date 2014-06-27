@@ -1,7 +1,7 @@
 var Hapi = require('hapi');
 var FridayParticipants = require('./friday-participants.json');
 
-var server = Hapi.createServer('localhost', 8080);
+var server = Hapi.createServer('0.0.0.0', 8080);
 
 
 FridayParticipants.forEach(function (participant) {
