@@ -2,7 +2,7 @@
 
 var Lab = require('lab'),
   Hapi = require('hapi'),
-  Plugin = require('../');
+  Plugin = require('../../../lib/plugins/dymonaz');
 
 var describe = Lab.experiment;
 var it = Lab.test;
@@ -25,7 +25,7 @@ describe('dymonaz', function() {
     var table = server.table();
 
     expect(table).to.have.length(1);
-    expect(table[0].path).to.equal('/');
+    expect(table[0].path).to.equal('/dymonaz');
 
     done();
   });
@@ -34,11 +34,11 @@ describe('dymonaz', function() {
     var table = server.table();
 
     expect(table).to.have.length(1);
-    expect(table[0].path).to.equal('/');
+    expect(table[0].path).to.equal('/dymonaz');
 
     var request = {
       method: 'GET',
-      url: '/'
+      url: '/dymonaz'
     };
 
     server.inject(request, function(res) {

@@ -2,7 +2,7 @@
 
 var Lab = require('lab'),
   Hapi = require('hapi'),
-  Plugin = require('../');
+  Plugin = require('../../../lib/plugins/rjsmelo');
 
 var describe = Lab.experiment;
 var it = Lab.test;
@@ -25,7 +25,7 @@ describe('rjsmelo', function() {
     var table = server.table();
 
     expect(table).to.have.length(1);
-    expect(table[0].path).to.equal('/');
+    expect(table[0].path).to.equal('/rjsmelo');
 
     done();
   });
@@ -34,11 +34,11 @@ describe('rjsmelo', function() {
     var table = server.table();
 
     expect(table).to.have.length(1);
-    expect(table[0].path).to.equal('/');
+    expect(table[0].path).to.equal('/rjsmelo');
 
     var request = {
       method: 'GET',
-      url: '/'
+      url: '/rjsmelo'
     };
 
     server.inject(request, function(res) {

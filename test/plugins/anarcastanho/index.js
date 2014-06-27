@@ -2,7 +2,7 @@
 
 var Lab = require('lab'),
   Hapi = require('hapi'),
-  Plugin = require('../');
+  Plugin = require('../../../lib/plugins/anarcastanho');
 
 var describe = Lab.experiment;
 var it = Lab.test;
@@ -25,7 +25,7 @@ describe('anarcastanho', function() {
     var table = server.table();
 
     expect(table).to.have.length(1);
-    expect(table[0].path).to.equal('/');
+    expect(table[0].path).to.equal('/anarcastanho');
 
     done();
   });
@@ -34,11 +34,11 @@ describe('anarcastanho', function() {
     var table = server.table();
 
     expect(table).to.have.length(1);
-    expect(table[0].path).to.equal('/');
+    expect(table[0].path).to.equal('/anarcastanho');
 
     var request = {
       method: 'GET',
-      url: '/'
+      url: '/anarcastanho'
     };
 
     server.inject(request, function(res) {
