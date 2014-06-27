@@ -24,8 +24,9 @@ describe('trenpixster', function() {
   it('Plugin registers routes', function(done) {
     var table = server.table();
 
-    expect(table).to.have.length(1);
+    expect(table).to.have.length(2);
     expect(table[0].path).to.equal('/trenpixster');
+    expect(table[1].path).to.equal('/trenpixster-proxy');
 
     done();
   });
@@ -33,17 +34,18 @@ describe('trenpixster', function() {
   it('Plugin route responses', function(done) {
     var table = server.table();
 
-    expect(table).to.have.length(1);
+    expect(table).to.have.length(2);
     expect(table[0].path).to.equal('/trenpixster');
+    expect(table[1].path).to.equal('/trenpixster-proxy');
 
     var request = {
       method: 'GET',
-      url: '/trenpixster'
+      url: '/trenpixster-proxy'
     };
 
     server.inject(request, function(res) {
       expect(res.statusCode).to.equal(200);
-      expect(res.result).to.equal('don\'t worry, be hapi!');
+      expect(res.result).to.contain('trenpixster');
       done();
     });
 
