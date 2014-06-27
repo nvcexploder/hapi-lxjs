@@ -24,8 +24,9 @@ describe('nihildacta', function() {
   it('Plugin registers routes', function(done) {
     var table = server.table();
 
-    expect(table).to.have.length(1);
+    expect(table).to.have.length(2);
     expect(table[0].path).to.equal('/nihildacta');
+    expect(table[1].path).to.equal('/nihildacta/proxy/{query}');
 
     done();
   });
@@ -33,8 +34,10 @@ describe('nihildacta', function() {
   it('Plugin route responses', function(done) {
     var table = server.table();
 
-    expect(table).to.have.length(1);
+    expect(table).to.have.length(2);
     expect(table[0].path).to.equal('/nihildacta');
+    expect(table[1].path).to.equal('/nihildacta/proxy/{query}');
+
 
     var request = {
       method: 'GET',
@@ -46,6 +49,17 @@ describe('nihildacta', function() {
       expect(res.result).to.equal('Nihil is hapi!');
       done();
     });
+
+    var request = {
+      method: 'GET',
+      url: '/nihildacta/proxy/soup'
+    };
+
+    server.inject(request, function(res) {
+      expect(res.statusCode).to.equal(200);
+      done();
+    });
+
 
   });
 });
