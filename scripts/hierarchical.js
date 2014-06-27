@@ -46,9 +46,9 @@ for(var i in participants) {
     
     Fs.writeFileSync(outputpath + '/index.js', indexOutput);
     try {
-        Fs.mkdirSync(outputpath + '/test/');
+        Fs.mkdirSync('./test/plugins');
     } catch (e) {
         // ignore
     }
-    Fs.writeFileSync(outputpath + '/test/' + username + '.js', indexOutput);
+    Fs.writeFileSync('./test/plugins/' + username + '/index.js', testOutput);
 }
