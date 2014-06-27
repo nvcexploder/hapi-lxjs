@@ -51,6 +51,7 @@ var friday = [
 	"JoaoCasalNovo",
 	"sgtcarneiro",
 	"jvpereira",
+        "joaosa",
 	"a-c-m",
 	"MMendes999",
 	"BrunoAssuncao",
