@@ -27,6 +27,7 @@
   "dependencies": {
     "hapi": "^6.0.2",
     "lab": "^3.2.1",
-    "mustache": "^0.8.2"
+    "mustache": "^0.8.2",
+    "nipple": "^2.5.3"
   }
 }
