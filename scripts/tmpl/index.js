@@ -10,7 +10,7 @@ exports.register = function(plugin, options, next) {
 
   plugin.route({
     method: 'GET',
-    path: '/johnbrett',
+    path: '/{{username}}',
     handler: function(request, reply) {
       reply('don\'t worry, be hapi!');
     }
@@ -20,6 +20,6 @@ exports.register = function(plugin, options, next) {
 };
 
 exports.register.attributes = {
-  name: 'johnbrett',
+  name: '{{username}}',
   version: '0.0.0'
 };
