@@ -1,5 +1,5 @@
 var Hapi = require('hapi');
-var FridayParticipants = require('./friday-participants.json');
+var FridayParticipants = require('./participants.json');
 
 var server = Hapi.createServer('0.0.0.0', 8080);
 
