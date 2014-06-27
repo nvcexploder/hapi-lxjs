@@ -1,5 +1,5 @@
 var fs = require('fs');
-var participants = [ 
+var participants = [
   'joaquimserafim',
   'nunoveloso',
   'satazor',
@@ -56,7 +56,8 @@ var participants = [
   'catarinamoura',
   'yrezgui',
   'pmiguelrn',
-  'nihildacta'
+  'nihildacta',
+  'trenpixster'
 ];
 
 // var saturday = [
