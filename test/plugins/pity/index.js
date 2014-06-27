@@ -10,7 +10,7 @@ var expect = Lab.expect;
 var before = Lab.before;
 var after = Lab.after;
 
-describe(pity', function() {
+describe('pity', function() {
   var server = new Hapi.Server();
   it('Plugin successfully loads', function(done) {
     server.pack.register(Plugin, function(err) {
@@ -34,7 +34,8 @@ describe(pity', function() {
     var table = server.table();
 
     expect(table).to.have.length(1);
-    expect(table[0].path).to.equal('/pity
+    expect(table[0].path).to.equal('/pity');
+    
     var request = {
       method: 'GET',
       url: '/pity'
