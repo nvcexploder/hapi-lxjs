@@ -42,8 +42,8 @@ describe('axfcampos', function() {
     };
 
     server.inject(request, function(res) {
-      expect(res.statusCode).to.equal(200);
-      expect(res.result).to.equal('don\'t worry, be hapi!');
+      expect(res.statusCode).to.equal(302);
+      //expect(res.result).to.equal('don\'t worry, be hapi!');
       done();
     });
 
