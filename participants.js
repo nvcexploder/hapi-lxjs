@@ -1,5 +1,5 @@
 var fs = require('fs');
-var friday = [
+var saturday = [
 	'joaquimserafim',
 	'nunoveloso',
 	'satazor',
@@ -31,14 +31,54 @@ var friday = [
 	'anarcastanho'
 ];
 
+var friday = [
+	"danielfdsilva",
+	"nelsonic",
+	"iteles",
+	"robertkowalski",
+	"DJCordhose",
+	"axfcampos",
+	"yarcub",
+	"peeofive",
+	"trodrigues",
+	"tomcartwrightuk",
+	"cajadas",
+	"xtravanta",
+	"rdquintas",
+	"lukebond",
+	"phuu",
+	"sandromaio",
+	"JoaoCasalNovo",
+	"sgtcarneiro",
+	"jvpereira",
+	"a-c-m",
+	"MMendes999",
+	"BrunoAssuncao",
+	"bmmrodrigues",
+	"davidfoliveira",
+	"sugendran",
+	"catarinamoura",
+	"yrezgui",
+	"pmiguelrn",
+	"nihildacta"
+];
+
 //create lib/plugins
 for( var i=0, il=friday.length; i<il; ++i ) {
 
-	fs.mkdirSync('./lib/plugins/'+friday[i]);
+	try {
+		fs.mkdirSync('./lib/plugins/'+friday[i]);
+	} catch (e) {
+
+	}
 }
 
 //create test/plugins
 for( var i=0, il=friday.length; i<il; ++i ) {
 
-	fs.mkdirSync('./test/plugins/'+friday[i]);
+	try {
+		fs.mkdirSync('./test/plugins/'+friday[i]);
+	} catch (e) {
+		
+	}
 }
