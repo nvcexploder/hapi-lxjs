@@ -7,7 +7,7 @@
     "example": "example"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "make test-cov"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
   "homepage": "https://github.com/nvcexploder/hapi-lxjs",
   "dependencies": {
     "hapi": "^6.0.2",
+    "lab": "^3.2.1",
     "mustache": "^0.8.2"
   }
 }
