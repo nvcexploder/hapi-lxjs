@@ -7,7 +7,6 @@ var server = Hapi.createServer('localhost', 8080);
 FridayParticipants.forEach(function(participant) {
 
     var participantPlugin = require('./lib/plugins/' + participant);
-    console.log('participant: ' + participant);
     server.pack.register(participantPlugin, function(err) {
 
         if (err) {
