@@ -43,7 +43,7 @@ describe('DJCordhose', function() {
 
     server.inject(request, function(res) {
       expect(res.statusCode).to.equal(200);
-      expect(res.result).to.equal('don\'t worry, be hapi!');
+      expect(res.result).to.equal('don\'t worry, be hapi! Yo!');
       done();
     });
 
